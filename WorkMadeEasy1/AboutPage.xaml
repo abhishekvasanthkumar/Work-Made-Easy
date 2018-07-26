@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WorkMadeEasy1.AboutPage">
+	<ContentPage.Content>
+		<ScrollView>
+     <StackLayout >
+		 <StackLayout Orientation= "Horizontal">
+            <Image 
+                HorizontalOptions="Start"
+                WidthRequest="100"
+                HeightRequest="100"
+                Source="http://mms.businesswire.com/media/20140116006273/en/63279/5/logo_scu_logo_PMS202_1.jpg">
+            </Image>
+            <Label Text="WorkMadeEasy"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                       TextColor="#9d2235"
+                       FontSize="Large"
+                    FontAttributes="Bold"/>
+            </StackLayout>
+
+		<Label Text="About SCU" FontSize="Large" TextColor="#9d2235" HorizontalOptions="Center" FontAttributes="Bold"/>
+	    <Label x:Name="sculink" Text="Go to SCU site" HorizontalOptions="Center" FontSize="Small"  TextColor="#9d2235">
+				<Label.GestureRecognizers>
+						<TapGestureRecognizer Tapped="Onsculink"
+											NumberOfTapsRequired="1"/>
+						</Label.GestureRecognizers>
+					</Label>
+				<Label Text="Contact Us" TextColor="#9d2235" FontSize="Medium" HorizontalOptions="Center" FontAttributes="Bold"/>
+				<Button Text="Call" TextColor="#9d2235" FontSize="Medium" Clicked="Callscu"/>
+				<Button Text="Send an SMS" TextColor="#9d2235" FontSize="Medium" Clicked="Messagescu"/>
+				   <Label></Label>
+				<Label></Label>
+      
+                <Label></Label>
+		<Label Text="About Dining Services" FontSize="Large" TextColor="#9d2235" HorizontalOptions="Center" FontAttributes="Bold"/>
+	    
+	        <Label x:Name="dininglink" Text="Go to SCU Dining Services site" HorizontalOptions="Center" FontSize="Small" TextColor="#9d2235">
+				<Label.GestureRecognizers>
+						<TapGestureRecognizer Tapped="Ondininglink"
+											NumberOfTapsRequired="1"/>
+						</Label.GestureRecognizers>
+					</Label>
+				<Label Text="Contact Us" TextColor="#9d2235" FontSize="Medium" HorizontalOptions="Center" FontAttributes="Bold"/>
+				<Button Text="Call" TextColor="#9d2235" FontSize="Medium" Clicked="Callbonappetit"/>
+				<Button Text="Send an SMS" TextColor="#9d2235" FontSize="Medium" Clicked="Messagebonappetit"/>		
+
+				<StackLayout>
+			<Image 
+				HorizontalOptions="Start"
+				WidthRequest="100"
+				HeightRequest="100"
+                Source="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAlpAAAAJGE2NGMwNDVjLTJkMjktNGNiYi1hZDY4LTkzYzYwZDc4YTljMg.jpg">
+            </Image>
+			</StackLayout>
+			</StackLayout>
+			</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

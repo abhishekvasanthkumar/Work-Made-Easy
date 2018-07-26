@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WorkMadeEasy1.RulesPage">
+	<ContentPage.Content>
+		<ScrollView>
+     <StackLayout >
+    <StackLayout Orientation= "Horizontal">
+            <Image 
+                HorizontalOptions="Start"
+                WidthRequest="100"
+                HeightRequest="100"
+                Source="http://mms.businesswire.com/media/20140116006273/en/63279/5/logo_scu_logo_PMS202_1.jpg">
+            </Image>
+            <Label Text="WorkMadeEasy"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                       TextColor="#9d2235"
+                       FontSize="Large"
+                    FontAttributes="Bold"/>
+            </StackLayout>
+                            <Label></Label>
+				<Label></Label>
+                
+            <Label Text="RULES"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                       TextColor="#9d2235"
+                       FontSize="Large"
+                    FontAttributes="Bold"/>
+            <Label></Label>
+      <Label></Label>
+				
+                <Label></Label>
+
+				
+				<Label Text="1.The employee has to be in uniform when at work." TextColor="#9d2235"
+                       FontSize="Medium" Margin="10, 0, 10, 0"/>
+					         <Label Text="2.The employee should wear non-slip shoes." TextColor="#9d2235"
+                       FontSize="Medium" Margin="10, 0, 10, 0"/>
+					         <Label Text="3.The employee has to be on-time to work" TextColor="#9d2235"
+                       FontSize="Medium" Margin="10, 0, 10, 0" />
+				     <Label></Label>
+      <Label></Label>
+                <Label></Label>
+			<Label></Label>
+      <Label></Label>
+                <Label></Label><Label></Label>
+      <Label></Label>
+                <Label></Label>
+				<Label></Label>
+	      <Label></Label><Label></Label>
+	      <Label></Label><Label></Label>
+	      <Label></Label><Label></Label>
+
+    
+            <StackLayout>
+            <Image 
+                HorizontalOptions="Start"
+                WidthRequest="100"
+                HeightRequest="100"
+                Source="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAlpAAAAJGE2NGMwNDVjLTJkMjktNGNiYi1hZDY4LTkzYzYwZDc4YTljMg.jpg">
+            </Image>
+            </StackLayout>
+    </StackLayout>
+    </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

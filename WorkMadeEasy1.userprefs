@@ -1,0 +1,55 @@
+﻿<Properties StartupConfiguration="{AE72B239-52A4-404F-80D7-D67E42254EF6}|Default">
+  <MonoDevelop.Ide.ItemProperties.WorkMadeEasy1.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1A2F33BC-9397-4158-A314-CDB456B3A3FD" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WorkMadeEasy1/SaEmployeePage.xaml.cs">
+    <Files>
+      <File FileName="WorkMadeEasy1/SScheulePage.xaml.cs" Line="89" Column="4" />
+      <File FileName="WorkMadeEasy1/User.cs" Line="1" Column="1" />
+      <File FileName="WorkMadeEasy1/WmeEmployeeHomePage.xaml.cs" Line="43" Column="1" />
+      <File FileName="WorkMadeEasy1/WmeEmployerHomePage.xaml.cs" Line="108" Column="5" />
+      <File FileName="WorkMadeEasy1/WmeForgotPassword1Page.xaml.cs" Line="1" Column="1" />
+      <File FileName="WorkMadeEasy1/WmeLoginPage.xaml.cs" Line="83" Column="91" />
+      <File FileName="WorkMadeEasy1/WmeRegistrationPage.xaml.cs" Line="56" Column="4" />
+      <File FileName="WorkMadeEasy1/WmeSplashPage.xaml.cs" Line="37" Column="3" />
+      <File FileName="WorkMadeEasy1/PickupManager.cs" Line="84" Column="4" />
+      <File FileName="WorkMadeEasy1/PickupPage.xaml.cs" Line="81" Column="45" />
+      <File FileName="WorkMadeEasy1/OnCallPage.xaml.cs" Line="43" Column="5" />
+      <File FileName="WorkMadeEasy1/Input.cs" Line="11" Column="46" />
+      <File FileName="WorkMadeEasy1/SaEmployeePage.xaml.cs" Line="79" Column="45" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WorkMadeEasy1" expanded="True">
+            <Node name="WorkMadeEasy1" expanded="True">
+              <Node name="App.xaml" expanded="True" />
+              <Node name="BSchedulePage.xaml" expanded="True" />
+              <Node name="CSchedulePage.xaml" expanded="True" />
+              <Node name="DSchedulePage.xaml" expanded="True" />
+              <Node name="LPrSchedulePage.xaml" expanded="True" />
+              <Node name="OnCallPage.xaml" expanded="True" />
+              <Node name="PickUpPage.xaml" expanded="True" />
+              <Node name="RulesPage.xaml" expanded="True" />
+              <Node name="SaEmployeePage.xaml" expanded="True" />
+              <Node name="SScheulePage.xaml" expanded="True" />
+              <Node name="WmeEmployeeHomePage.xaml" expanded="True" />
+              <Node name="WmeEmployerHomePage.xaml" expanded="True" />
+              <Node name="WmeForgotPassword1Page.xaml" expanded="True" />
+              <Node name="WmeLoginPage.xaml" expanded="True" />
+              <Node name="WmeRegistrationPage.xaml" expanded="True" />
+              <Node name="WmeSplashPage.xaml" expanded="True" />
+            </Node>
+            <Node name="WorkMadeEasy1.Droid" expanded="True" />
+            <Node name="WorkMadeEasy1.iOS" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.WorkMadeEasy1.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

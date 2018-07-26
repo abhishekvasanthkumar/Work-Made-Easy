@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WorkMadeEasy1.CSchedulePage">
+	<ContentPage.Content>
+		<ScrollView>
+	<StackLayout >
+	    <StackLayout Orientation= "Horizontal">
+				<Image 
+					HorizontalOptions="Start"
+					WidthRequest="100"
+					HeightRequest="100"
+	                Source="http://mms.businesswire.com/media/20140116006273/en/63279/5/logo_scu_logo_PMS202_1.jpg">
+	            </Image>
+				<Label Text="WorkMadeEasy"
+						HorizontalOptions="Center"
+						VerticalOptions="Center"
+	               		TextColor="#9d2235"
+	               		FontSize="Large"
+					    FontAttributes="Bold"/>
+				</StackLayout>
+	    <Label></Label>
+	    <Label></Label>
+	    <Label></Label>
+	    <Label Text="SCHEDULE"
+	           FontSize="Large" 
+				VerticalOptions="Center" 
+				HorizontalTextAlignment= "Center" 
+				TextColor="#9d2235" 
+				FontAttributes = "Bold"></Label>
+	    <Label/>
+		<Label></Label>
+				<Entry x:Name="CemployeeidU"
+				Placeholder="* Enter the Employee Id" 
+				TextColor="Black" 
+				Margin="10, 0, 10, 0">
+				</Entry>
+	    <Label></Label>
+	    <Label></Label>
+		<Picker x:Name="CWorkDayU" Title="Select a Day" HorizontalOptions="FillAndExpand" >
+				<Picker.Items>		
+	            <x:String>Monday </x:String> 
+	            <x:String>Tuesday</x:String>
+				<x:String>Wednesday</x:String>
+				<x:String>Thursday</x:String>
+				<x:String>Friday</x:String>
+
+	        	</Picker.Items>
+	    	</Picker> 
+
+				
+		 <Label></Label>
+	     <Label></Label>
+	     <Label></Label>
+		
+		<Picker x:Name="CshiftU" Title="Select a Shift" HorizontalOptions="FillAndExpand" >
+		<Picker.Items>		
+	     		<x:String>S1:Shift1-9:00am to 12:00pm</x:String> 
+	            <x:String>S2:Shift1-12:00pm to 3:00pm</x:String>
+				<x:String>S3:Shift1-3:00pm to 6:00pm</x:String>
+	        	</Picker.Items>
+	    	</Picker>
+		<Label></Label>
+		<Label></Label>
+		<Label></Label>
+
+		<Button x:Name="CSaveU"
+				Text="Save"
+				HorizontalOptions="Center"
+				TextColor="White"
+	       BackgroundColor="#9d2235"
+	       BorderColor="White"
+					Clicked="OnSaveClicked"
+	        ></Button>
+		<Label></Label>
+		<Label></Label>
+		<Label></Label>
+	      
+		<StackLayout>
+			<Image 
+					HorizontalOptions="Start"
+					WidthRequest="100"
+					HeightRequest="100"
+	                Source="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAlpAAAAJGE2NGMwNDVjLTJkMjktNGNiYi1hZDY4LTkzYzYwZDc4YTljMg.jpg">
+	         </Image>
+		</StackLayout>
+
+			
+	 
+	  </StackLayout>
+    </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:WorkMadeEasy1" x:Class="WorkMadeEasy1.WmeSplashPage">
+	
+
+  <ContentPage x:Name ="first">
+  <ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0"  />
+        </ContentPage.Padding>
+        <ScrollView>
+    <StackLayout Orientation="Vertical">
+            <Image 
+                HorizontalOptions="Start"
+                WidthRequest="100"
+                HeightRequest="100"
+                Source="http://mms.businesswire.com/media/20140116006273/en/63279/5/logo_scu_logo_PMS202_1.jpg">
+            </Image>
+            <Image 
+                HorizontalOptions="Center"
+                WidthRequest="320"
+                HeightRequest="240"
+                Source="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAlpAAAAJGE2NGMwNDVjLTJkMjktNGNiYi1hZDY4LTkzYzYwZDc4YTljMg.jpg">
+            </Image>
+            <StackLayout Orientation="Vertical">
+                <Label Text="WorkMadeEasy"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                       TextColor="#9d2235"
+                       FontSize="Large"
+                    FontAttributes="Bold"/>
+            </StackLayout>
+				<Label></Label>
+      <Label></Label>
+                <Label></Label>
+				<Label></Label>
+      <Label></Label>
+                <Label></Label>
+				
+	  <Label Text="Swipe to unlock" 
+				FontSize="Small" 
+				FontAttributes="Italic"
+				TextColor="#9d2235"
+				HorizontalOptions="Center"
+				/>
+    </StackLayout>
+</ScrollView>
+		
+    </ContentPage>
+
+	<ContentPage x:Name="second">
+		<ContentPage.Padding>
+            <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0"  />
+        </ContentPage.Padding>
+        
+       <ScrollView>
+     <StackLayout >
+    <StackLayout Orientation= "Horizontal">
+            <Image 
+                HorizontalOptions="Start"
+                WidthRequest="100"
+                HeightRequest="100"
+                Source="http://mms.businesswire.com/media/20140116006273/en/63279/5/logo_scu_logo_PMS202_1.jpg">
+            </Image>
+            <Label Text="WorkMadeEasy"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                       TextColor="#9d2235"
+                       FontSize="Large"
+                    FontAttributes="Bold"/>
+            </StackLayout>
+
+                
+            <Label Text="Welcome!"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                       TextColor="#9d2235"
+                       FontSize="Large"
+                    FontAttributes="Bold"/>
+        
+    <Entry 
+            Placeholder="Email Address" 
+            x:Name="emailU"
+            Margin="20, 0, 15, 5" 
+            TextColor="Gray" ></Entry>
+    <Entry 
+            Placeholder="Password" 
+            x:Name="passwordU" 
+            IsPassword="true"
+            Margin="20, 0, 15, 5"  
+            TextColor="Gray"></Entry>
+             
+             <Picker x:Name="Persontype" Title="Select" HorizontalOptions="FillAndExpand">
+        <Picker.Items>        
+            <x:String>Employer </x:String> 
+            <x:String>Employee</x:String>
+        </Picker.Items>
+    </Picker> 
+            <Label></Label>
+    <Button 
+                Text="Log In" 
+                HorizontalOptions="CenterAndExpand"
+                TextColor="White"
+                BackgroundColor="#9d2235"
+                BorderColor="White"
+					Clicked="OnLogInClicked1"
+                ></Button>
+    
+      <Button Text="Sign Up"
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="White"
+                    BackgroundColor="#9d2235"
+                    BorderColor="White"
+					Clicked="OnSignUpClicked1"
+          ></Button>
+
+	<Button Text="Forgot Password"
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="#9d2235"
+                    BackgroundColor="White"
+                    BorderColor="White"
+					Clicked="OnForgotPasswordClicked1"
+          ></Button>
+             
+				<Button Text="About" TextColor="#9d2235" Clicked="OnAboutClicked"></Button>
+			 
+            <StackLayout>
+            <Image 
+                HorizontalOptions="Start"
+                WidthRequest="100"
+                HeightRequest="100"
+                Source="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAlpAAAAJGE2NGMwNDVjLTJkMjktNGNiYi1hZDY4LTkzYzYwZDc4YTljMg.jpg">
+            </Image>
+            </StackLayout>
+    </StackLayout>
+    </ScrollView>
+    </ContentPage>
+	
+</CarouselPage>

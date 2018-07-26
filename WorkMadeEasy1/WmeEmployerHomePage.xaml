@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+		x:Class="WorkMadeEasy1.WmeEmployerHomePage">
+
+	    
+	<ScrollView>
+	        <StackLayout>
+				<StackLayout Orientation= "Horizontal">
+				<Image 
+					HorizontalOptions="Start"
+					WidthRequest="100"
+					HeightRequest="100"
+	                Source="http://mms.businesswire.com/media/20140116006273/en/63279/5/logo_scu_logo_PMS202_1.jpg">
+	            </Image>
+				<Label Text="WorkMadeEasy"
+						HorizontalOptions="Center"
+						VerticalOptions="Center"
+	               		TextColor="#9d2235"
+	               		FontSize="Large"
+					    FontAttributes="Bold"/>
+					<Button x:Name="LogoutEmployerU"
+	                Text="Logout"
+	                TextColor="#9d2235"
+	                HorizontalOptions="End"
+					VerticalOptions="End"
+	                BackgroundColor="White"
+	                BorderColor="White"
+					Clicked="OnEmployerLogOutButtonClicked"
+	            ></Button>
+				</StackLayout>
+					
+	  
+	      
+	      <Label></Label><Label></Label>
+			<Label Text="Hello Admin!" TextColor="#000080" />
+
+				<Grid RowSpacing="0">
+	    <Grid.RowDefinitions>
+	      <RowDefinition Height="300"/>
+	      <RowDefinition Height=".7*"/>
+	    </Grid.RowDefinitions>
+	    <cv:CarouselView ItemsSource="{Binding Zoos}" x:Name="CarouselZoos">
+	      <cv:CarouselView.ItemTemplate>
+	        <DataTemplate>
+	          <Grid>
+	            <Grid.RowDefinitions>
+	              <RowDefinition Height="*"/>
+	              <RowDefinition Height="Auto"/>
+	            </Grid.RowDefinitions>
+	            <Image Grid.RowSpan="2" Aspect="AspectFit" Source="{Binding ImageUrl}"/>
+	            <StackLayout Grid.Row="1" BackgroundColor="#9d2235" Padding="12">
+	              <Label TextColor="White" Text="{Binding Name}" FontSize="16" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+	            </StackLayout>
+	          </Grid>
+	        </DataTemplate>
+	      </cv:CarouselView.ItemTemplate>
+	    </cv:CarouselView>
+	    <!--List of Monkeys below-->
+	  </Grid>
+
+			<Label Text="Swipe through the images of different workplaces" 
+				FontSize="10"
+				HorizontalOptions="Center"
+				TextColor="#9d2235"
+				FontAttributes="Italic"/>
+
+	<Grid>       
+	        <Grid.RowDefinitions>
+	            <RowDefinition Height="100" />
+	            <RowDefinition Height="100" />
+	            <RowDefinition Height="100" />
+
+	          </Grid.RowDefinitions>
+	         <Grid.ColumnDefinitions>
+	             <ColumnDefinition Width="100" />
+	            <ColumnDefinition Width="100" />
+	            <ColumnDefinition Width="100" />
+	           </Grid.ColumnDefinitions>
+	      
+	            <Image x:Name="lprimg"
+	                Grid.Row="0" Grid.Column="0"
+	                WidthRequest="100"
+	                HeightRequest="100"
+	                Source="LaParilla.png">
+	            </Image>
+
+	            <Image x:Name="brimg"
+	                Grid.Row="0" Grid.Column="2"
+	                HorizontalOptions="Center"
+	                WidthRequest="100"
+	                HeightRequest="100"
+	                Source="Bistro.png">
+	            </Image>
+				
+				<Image x:Name="srimg"
+	                Grid.Row="1" Grid.Column="0"
+	                HorizontalOptions="Center"
+	                WidthRequest="100"
+	                HeightRequest="100"
+	                Source="Saute.png">
+	            </Image>
+
+	            <Image x:Name="drimg"
+	                Grid.Row="1" Grid.Column="2"
+	                HorizontalOptions="Center"
+	                WidthRequest="100"
+	                HeightRequest="100"
+	                Source="Deli.png">
+	            </Image>
+
+	            <Image x:Name="crimg"
+	                Grid.Row="2" Grid.Column="1"
+	                HorizontalOptions="Center"
+	                WidthRequest="100"
+	                HeightRequest="100"
+	                Source="Cadence.png">
+	            </Image>
+	                </Grid>
+
+			
+			<StackLayout Orientation="Horizontal">
+					<Label></Label>
+	      <Label></Label>
+	      <Label></Label>
+				 <Label></Label>
+					<Label></Label>
+	     			<Label></Label>
+	      <Label></Label>
+				
+	      <Label></Label>
+		<Button x:Name="OnCallU"
+				Text="On-Call"
+
+				TextColor="White"
+	       BackgroundColor="#9d2235"
+	       BorderColor="White"
+		   Clicked="OnCallClicked"
+	        ></Button>
+	        	<Label></Label>
+	      
+	      <Label></Label><Label></Label>
+					<Label></Label>
+	      <Label></Label>
+	      <Label></Label>
+					<Label></Label>
+	     			<Label></Label>
+	      <Label></Label>
+				<Label></Label>
+	      <Label></Label>
+	      <Label></Label>
+	     
+	      <Label></Label>
+	      <Label></Label><Label></Label>
+	      <Label></Label>
+		<Button x:Name="NotifyU"
+				Text="Notify"
+ 				TextColor="White"
+	  	        BackgroundColor="#9d2235"
+	            BorderColor="White"
+		        Clicked="OnNotifyClicked"
+	        ></Button>
+					<Label></Label>
+	      <Label></Label>
+	      <Label></Label>
+				
+		
+						</StackLayout>
+
+			<StackLayout>
+            <Image 
+                HorizontalOptions="Start"
+                WidthRequest="150"
+                HeightRequest="150"
+                Source="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAlpAAAAJGE2NGMwNDVjLTJkMjktNGNiYi1hZDY4LTkzYzYwZDc4YTljMg.jpg">
+            </Image>
+            </StackLayout>
+	            
+	        </StackLayout>
+	        </ScrollView>
+
+					
+	</ContentPage>
+

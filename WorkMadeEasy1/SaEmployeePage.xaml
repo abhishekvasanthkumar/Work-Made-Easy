@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WorkMadeEasy1.SaEmployeePage">
+	<ContentPage.Content>
+		<ScrollView>
+	<StackLayout >
+	    <StackLayout Orientation= "Horizontal">
+				<Image 
+					HorizontalOptions="Start"
+					WidthRequest="100"
+					HeightRequest="100"
+	                Source="http://mms.businesswire.com/media/20140116006273/en/63279/5/logo_scu_logo_PMS202_1.jpg">
+	            </Image>
+				<Label Text="WorkMadeEasy"
+						HorizontalOptions="Center"
+						VerticalOptions="Center"
+	               		TextColor="#9d2235"
+	               		FontSize="Large"
+					    FontAttributes="Bold"/>
+				</StackLayout>
+	    <Label></Label>
+	    <Label></Label>
+				<Label Text="Double Tap on the shift to CALL-OUT the shift" 
+					TextColor="#000080"
+					FontSize="Medium"/>
+					<Label></Label>
+	    <Label></Label>
+	    <Label Text="SCHEDULE"
+	           FontSize="Large" 
+				VerticalOptions="Center" 
+				HorizontalTextAlignment= "Center" 
+				TextColor="#9d2235" 
+				FontAttributes = "Bold"></Label>
+	    <Label/>
+				
+				<ListView x:Name="employeeschedule" RowHeight="100">
+					<ListView.ItemTemplate>
+						<DataTemplate>
+							<ViewCell>
+								<StackLayout Orientation="Vertical" Padding="5,0,0,0">
+									<Label Text="{Binding Workplace}"/>
+									<Label Text="{Binding Day}" />
+									<Label Text="{Binding Shift}"/>
+									<Label.GestureRecognizers>
+										<TapGestureRecognizer Tapped="OnSchedule"
+											NumberOfTapsRequired="2"/>
+									</Label.GestureRecognizers>
+								</StackLayout>
+								</ViewCell>
+						</DataTemplate>
+					</ListView.ItemTemplate>
+				</ListView>
+				</StackLayout>
+			</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WorkMadeEasy1.WmeRegistrationPage">
+ 
+	<ContentPage.Content>
+		<ScrollView>
+		<StackLayout >
+    <StackLayout Orientation= "Horizontal">
+			<Image x:Name="scuicon"
+				HorizontalOptions="Start"
+				WidthRequest="100"
+				HeightRequest="100"
+                Source="http://mms.businesswire.com/media/20140116006273/en/63279/5/logo_scu_logo_PMS202_1.jpg">
+            </Image>
+			<Label Text="WorkMadeEasy"
+					HorizontalOptions="Center"
+					VerticalOptions="Center"
+               		TextColor="#9d2235"
+               		FontSize="Large"
+				    FontAttributes="Bold"/>
+			</StackLayout>
+    <Label Text="REGISTRATION"
+           FontSize="Medium" 
+			VerticalOptions="Center" 
+			HorizontalTextAlignment= "Center" 
+			TextColor="#9d2235" 
+			FontAttributes = "Bold"></Label>
+    <Label/>
+    <Entry x:Name="FirstnameU"
+			Placeholder="* First Name" 
+			TextColor="Gray" 
+			Margin="10, 0, 10, 0">
+			</Entry>
+	<Entry x:Name="SecondnameU"
+			Placeholder="* Last Name" 
+			TextColor="Gray" 
+			Margin="10, 0, 10, 0">
+			</Entry>
+	<Entry x:Name="EidU"
+			Placeholder="* Student Id" 
+			TextColor="Gray" 
+			Margin="10, 0, 10, 0">
+			</Entry>
+    <Entry x:Name="emailU" 
+			Placeholder ="* Email" 
+			TextColor="Gray" 
+			Margin="10, 0, 10, 0"></Entry>
+    <Entry x:Name="passwordU"
+			Placeholder="* Password" 
+			IsPassword="True" 
+			FontSize="Medium"
+			TextColor="Gray" 
+			Margin="10, 0, 10, 0" />
+    <Entry x:Name="phoneNumberU" 
+			Placeholder ="Contact Number" 
+			TextColor="Gray" 
+			Margin="10, 0, 10, 0"></Entry>
+	<Entry x:Name="questionU" 
+			Placeholder ="Question" 
+			TextColor="Gray" 
+			Margin="10, 0, 10, 0"></Entry>
+	 <Entry x:Name="answerU" 
+			Placeholder ="Answer" 
+			TextColor="Gray" 
+			Margin="10, 0, 10, 0"></Entry>
+				
+				
+   
+    <Label></Label>
+    <Label Text="By clicking Submit, I agree to your terms and conditions " 
+				FontSize="Small"
+	VerticalOptions="Center" 
+			HorizontalTextAlignment= "Center" 
+			TextColor="#9d2235"></Label>
+    <Button Text="Submit" HorizontalOptions="CenterAndExpand" TextColor="White"
+       BackgroundColor="#9d2235"
+       BorderColor="White"
+					Clicked="OnSubmitClicked"
+        ></Button>
+
+			<StackLayout>
+			<Image x:Name="applogo"
+				HorizontalOptions="Start"
+				WidthRequest="100"
+				HeightRequest="100"
+                Source="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAlpAAAAJGE2NGMwNDVjLTJkMjktNGNiYi1hZDY4LTkzYzYwZDc4YTljMg.jpg">
+            </Image>
+			</StackLayout>
+
+		
+ 
+  </StackLayout>
+			</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

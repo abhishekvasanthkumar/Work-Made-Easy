@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="WorkMadeEasy1.OnCallPage">
+
+	<ScrollView>
+	<StackLayout >
+	    <StackLayout Orientation= "Horizontal">
+				<Image 
+					HorizontalOptions="Start"
+					WidthRequest="100"
+					HeightRequest="100"
+	                Source="http://mms.businesswire.com/media/20140116006273/en/63279/5/logo_scu_logo_PMS202_1.jpg">
+	            </Image>
+				<Label Text="WorkMadeEasy"
+						HorizontalOptions="Center"
+						VerticalOptions="Center"
+	               		TextColor="#9d2235"
+	               		FontSize="Large"
+					    FontAttributes="Bold"/>
+				</StackLayout>
+	    <Label></Label>
+	    <Label></Label>
+	    <Label></Label>
+	    <Label Text="ON-CALL"
+	           FontSize="Large" 
+				VerticalOptions="Center" 
+				HorizontalTextAlignment= "Center" 
+				TextColor="#9d2235" 
+				FontAttributes = "Bold"></Label>
+	    <Label/>
+	    <Entry x:Name="WorkPlaceU"
+				Placeholder="* Work Place" 
+				TextColor="Gray" 
+				Margin="10, 0, 10, 0">
+				</Entry>
+		<Label></Label>
+	    <Label></Label>
+	    <Label></Label>
+		<Entry x:Name="WorkDayU"
+				Placeholder="* Work Day" 
+				TextColor="Gray" 
+				Margin="10, 0, 10, 0">
+				</Entry>
+		 <Label></Label>
+	     <Label></Label>
+	     <Label></Label>
+	    <Entry x:Name="shiftU" 
+				Placeholder ="* Shift Number" 
+				TextColor="Gray" 
+				Margin="10, 0, 10, 0"></Entry>
+		<Label></Label>
+		<Label></Label>
+		<Label></Label>
+					
+		<Button x:Name="OnCallU"
+				Text="Publish"
+				HorizontalOptions="Center"
+				TextColor="White"
+	       BackgroundColor="#9d2235"
+	       BorderColor="White"
+				Clicked="OnCallClicked"
+	        ></Button>
+		<Label></Label>
+		<Label></Label>
+		<Label></Label>
+	      
+		<StackLayout>
+			<Image 
+					HorizontalOptions="Start"
+					WidthRequest="100"
+					HeightRequest="100"
+	                Source="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAlpAAAAJGE2NGMwNDVjLTJkMjktNGNiYi1hZDY4LTkzYzYwZDc4YTljMg.jpg">
+	         </Image>
+		</StackLayout>
+
+			
+	 
+	  </StackLayout>
+    </ScrollView>
+		
+	</ContentPage>

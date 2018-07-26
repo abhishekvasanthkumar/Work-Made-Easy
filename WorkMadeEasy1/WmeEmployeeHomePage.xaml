@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+	x:Class="WorkMadeEasy1.WmeEmployeeHomePage">ß
+
+
+
+    
+<ScrollView>
+	        <StackLayout>
+				<StackLayout Orientation= "Horizontal">
+				<Image 
+					HorizontalOptions="Start"
+					WidthRequest="100"
+					HeightRequest="100"
+	                Source="http://mms.businesswire.com/media/20140116006273/en/63279/5/logo_scu_logo_PMS202_1.jpg">
+	            </Image>
+				<Label Text="WorkMadeEasy"
+						HorizontalOptions="Center"
+						VerticalOptions="Center"
+	               		TextColor="#9d2235"
+	               		FontSize="Large"
+					    FontAttributes="Bold"/>
+					<Button x:Name="LogoutEmployeeU"
+	                Text="Logout"
+	                TextColor="#9d2235"
+	                HorizontalOptions="End"
+					VerticalOptions="End"
+	                BackgroundColor="White"
+	                BorderColor="White"
+					Clicked="OnEmployeeLogOutButtonClicked"
+	            ></Button>
+				</StackLayout>
+			<StackLayout>
+				<Label Text="Employee Username:" FontAttributes="Bold" TextColor="#9d2235" />
+				<Label x:Name="Employeeusername" TextColor="#000080" />
+			</StackLayout>
+
+
+				<Grid RowSpacing="0">
+	    <Grid.RowDefinitions>
+	      <RowDefinition Height="300"/>
+	      <RowDefinition Height=".7*"/>
+	    </Grid.RowDefinitions>
+	    <cv:CarouselView ItemsSource="{Binding Zoos}" x:Name="CarouselZoos">
+	      <cv:CarouselView.ItemTemplate>
+	        <DataTemplate>
+	          <Grid>
+	            <Grid.RowDefinitions>
+	              <RowDefinition Height="*"/>
+	              <RowDefinition Height="Auto"/>
+	            </Grid.RowDefinitions>
+	            <Image Grid.RowSpan="2" Aspect="AspectFit" Source="{Binding ImageUrl}"/>
+	            <StackLayout Grid.Row="1" BackgroundColor="#9d2235" Padding="12">
+	              <Label TextColor="White" Text="{Binding Name}" FontSize="16" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+	            </StackLayout>
+	          </Grid>
+	        </DataTemplate>
+	      </cv:CarouselView.ItemTemplate>
+	    </cv:CarouselView>
+	    <!--List of Monkeys below-->
+	  </Grid>
+
+			<Label Text="Swipe through the images of different workplaces" 
+				FontSize="10"
+				HorizontalOptions="Center"
+				TextColor="#9d2235"
+				FontAttributes="Italic"/>
+
+	<Button Text="Schedule List" BackgroundColor="#9d2235" HorizontalOptions="Center" TextColor="White" Clicked="OnListClicked"/>
+
+			
+					<Label></Label>
+	      <Label></Label>
+	    
+		<Button x:Name="BePickUp"
+				Text="Pick Up List"
+				HorizontalOptions="Center"
+				TextColor="White"
+	       BackgroundColor="#9d2235"
+	       BorderColor="White"
+		   Clicked="OnPickUpClicked"
+	        ></Button>
+					
+
+			<Button x:Name="Rule"
+				Text="Rules to be followed"
+				TextColor="#9d2235"
+		   Clicked="OnRuleClicked"
+	        ></Button>
+
+			<StackLayout>
+            <Image 
+                HorizontalOptions="Start"
+                WidthRequest="150"
+                HeightRequest="150"
+                Source="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAlpAAAAJGE2NGMwNDVjLTJkMjktNGNiYi1hZDY4LTkzYzYwZDc4YTljMg.jpg">
+            </Image>
+            </StackLayout>
+	            
+	        </StackLayout>
+	        </ScrollView>
+
+					
+	</ContentPage>
+
